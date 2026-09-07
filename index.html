@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#047857" />
+
+    <title>Fuel Cost Calculator — what a trip costs in petrol or diesel</title>
+    <meta
+      name="description"
+      content="Work out the fuel cost of a trip from the distance, your car's economy and the pump price. Metric (L/100 km) or US and UK MPG, split between passengers, one-way or return. Runs in your browser, no sign-up."
+    />
+    <link rel="canonical" href="https://fuel-cost-calculator.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fuel Cost Calculator" />
+    <meta property="og:description" content="What a trip costs in fuel, from distance, economy and pump price. Metric or MPG, split between passengers, one-way or return." />
+    <meta property="og:url" content="https://fuel-cost-calculator.correia95.workers.dev/" />
+    <meta property="og:image" content="https://fuel-cost-calculator.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fuel Cost Calculator" />
+    <meta name="twitter:description" content="What a trip costs in fuel, from distance, economy and pump price. Metric or MPG, split, one-way or return." />
+    <meta name="twitter:image" content="https://fuel-cost-calculator.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Fuel Cost Calculator",
+        "url": "https://fuel-cost-calculator.correia95.workers.dev/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Estimate the fuel cost of a trip from distance, fuel economy and pump price, in metric or MPG, split between passengers, entirely in the browser."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate the fuel cost of a trip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Fuel used is the distance divided by 100 times the L/100 km figure, or the distance divided by MPG. Multiply the fuel used by the pump price to get the trip cost."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do US and UK MPG differ for the same car?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A UK imperial gallon is about 20 percent larger than a US gallon, so the same fuel economy produces a higher number in UK MPG. Use the tab that matches your figures, and price the fuel per the same gallon."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate is the estimate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is only as good as the economy figure you enter. The manufacturer's rating is a lab result; real consumption is affected by speed, load, terrain, air conditioning and traffic. For a regular trip, use your own measured average."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I split the cost between passengers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Enter the number of people, including yourself, and the calculator shows the cost per person as well as the total."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        This fuel cost calculator needs JavaScript. It estimates the fuel cost of a trip from the
+        distance, your car's economy and the pump price, in metric or MPG, split between passengers.
+      </p>
+    </noscript>
+  </body>
+</html>
